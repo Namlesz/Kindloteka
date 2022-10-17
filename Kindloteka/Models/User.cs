@@ -1,6 +1,3 @@
 namespace Kindloteka.Models;
 
-public class User
-{
-    
-}
+public record User(string? Name, string? Surname, string? SchoolClass);

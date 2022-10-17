@@ -14,14 +14,10 @@
       "launchBrowser": true,
       "applicationUrl": "https://localhost:7197;http://localhost:5213",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      }
-    },
-    "IIS Express": {
-      "commandName": "IISExpress",
-      "launchBrowser": true,
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "EMAIL_ACCOUNT":"postmaster@sandboxa51f171d4f86489a807dcec6b3bc1691.mailgun.org",
+        "EMAIL_PASSWORD":"87fe9165087f155f0b7302275e0a7a5b-b0ed5083-c9e74f0d",
+        "EMAIL_RECIEVIER":"nejmlesz@gmail.com"
       }
     }
   }

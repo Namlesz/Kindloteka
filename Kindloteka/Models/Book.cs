@@ -1,6 +1,3 @@
 namespace Kindloteka.Models;
 
-public class Book
-{
-    
-}
+public record Book(string Title, string Author);
