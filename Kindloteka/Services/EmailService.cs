@@ -17,7 +17,7 @@ public class EmailService
         _mailMessage.From = new MailAddress(email);
         _mailMessage.IsBodyHtml = true;
 
-        _smtpClient = new SmtpClient("smtp.mailgun.org", 587);
+        _smtpClient = new SmtpClient("smtp.gmail.com", 587);
         _smtpClient.Credentials = new System.Net.NetworkCredential(email, password);
         _smtpClient.EnableSsl = true;
     }
