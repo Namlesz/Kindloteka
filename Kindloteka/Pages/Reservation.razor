@@ -1,0 +1,51 @@
+@page "/rezerwacja"
+@using System.ComponentModel.DataAnnotations
+
+
+<PageTitle>Kindloteka</PageTitle>
+<form>
+    <div class="form-group mt-2">
+        <label for="inputTitle">Tytuł</label>
+        <input type="text" class="form-control" id="inputTitle" placeholder=@Title readonly>
+    </div>
+    <div class="form-group mt-2">
+        <label for="inputAuthor">Autor</label>
+        <input type="text" class="form-control" id="inputAuthor" placeholder=@Author readonly>
+    </div>
+    <div class="form-group mt-2">
+        <label for="inputName">Imię</label>
+        <input type="text" class="form-control" id="inputName" placeholder="Podaj imię" @bind="Name">
+    </div>
+    <div class="form-group mt-2">
+        <label for="inputSurname">Nazwisko</label>
+        <input type="text" class="form-control" id="inputSurname" placeholder="Podaj nazwisko" @bind="Surname">
+    </div>
+        <div class="form-group mt-2">
+            <label for="inputClass">Klasa</label>
+            <input type="text" class="form-control" id="inputClass" placeholder="Podaj klase" @bind="SchoolClass">
+        </div>
+    <button type="button" @onclick="SendReservation" class="btn btn-primary mt-3">Zarezerwuj</button>
+</form>
+
+@code {
+    [Required]
+    [Parameter]
+    [SupplyParameterFromQuery(Name = "title")]
+    public string Title { get; set; }
+    [Required]
+    [Parameter]
+    [SupplyParameterFromQuery(Name = "author")]
+    public string Author { get; set; }
+
+    
+    public string? Name { get; set; }
+    public string? Surname { get; set; }
+    public string? SchoolClass { get; set; }
+
+    public void SendReservation()
+    {
+        Console.WriteLine(Name);
+        Console.WriteLine(Surname);
+        Console.WriteLine(SchoolClass);
+    }
+}
