@@ -66,7 +66,7 @@ else
     private async Task SendReservation()
     {
         IsLoading = true;
-        var book = new Book(Title, Author);
+        var book = new Book(Author, Title);
         var user = new User(Name, Surname, SchoolClass);
 
         if (IsValidModel(book, user))
