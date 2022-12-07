@@ -1,10 +1,10 @@
-#Book booking app
+# Book booking app
 
-##Purpose of app
+## Purpose of app
 Learn blazor server app and help small school to accept book reservations.
 
-##Tech
+## Tech
 Written with .NET Blazor server
 
-##Run
+## Run
 Use Visual Studio or rider, and use setted configuration.
